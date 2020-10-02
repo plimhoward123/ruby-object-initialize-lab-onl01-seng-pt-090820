@@ -5,10 +5,10 @@ class Dog
   end
 
   def breed=(breed)
-    if (breed != nil)
-      @breed = breed
-    else
+    if (breed == "")
       @breed = "Mutt"
+    else 
+      @breed = breed
     end
   end
   def breed
