@@ -1,11 +1,17 @@
 class Dog
-
-  def self.define(atr)
-    atr.each do |atrr|
-      define_method(atrr) do
-        instance_variable_set("@{atrr}")
-      end
-    end
+  def initialize(name)
+    @name = name
+    @breed = "Mutt"
   end
-  self.define_method([:name,:breed])
+  def initialize(name,breed)
+    @name = name
+    @name = breed
+  end
+
+  def breed=(breed)
+    @breed = breed
+  end
+  def breed
+    @breed
+  end
 end
