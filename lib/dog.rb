@@ -7,7 +7,7 @@ class Dog
   def breed=(breed)
     if (breed == "")
       @breed = "Mutt"
-    else 
+    else
       @breed = breed
     end
   end
